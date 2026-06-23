@@ -1,0 +1,122 @@
+/* ── QUIÉNES SOMOS ────────────────────────────────── */
+.about {
+    padding: 7rem 5vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media(min-width:768px) {
+    .about {
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+
+}
+
+.section-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--pink-600);
+    margin-bottom: 1rem;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--neutral-900);
+    margin-bottom: 1.5rem;
+}
+
+.about h2 em {
+    font-style: italic;
+    color: var(--pink-600);
+}
+
+.about p {
+    font-size: 1rem;
+    color: var(--neutral-500);
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+
+.about-visual {
+    position: relative;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(249, 168, 212, 0.3);
+    border-radius: 24px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(252, 231, 243, 0.6) 0%, rgba(253, 242, 248, 0.2) 100%);
+    pointer-events: none;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--pink-600);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--neutral-500);
+    margin-top: 0.4rem;
+    letter-spacing: 0.06em;
+}
+
+.geo-accent {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--pink-200);
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+    opacity: 0.5;
+}
+
+.geo-accent-2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--pink-200);
+    border-radius: 50%;
+    bottom: 20px;
+    left: -20px;
+    opacity: 0.4;
+    filter: blur(4px);
+}

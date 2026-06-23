@@ -1,0 +1,70 @@
+/* ── NAVBAR ─────────────────────────────────────── */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 5vw;
+    background: rgba(253, 242, 248, 0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(249, 168, 212, 0.25);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    color: var(--neutral-900);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--pink-500);
+}
+
+.nav-links {
+    display: none;
+}
+
+
+@media (min-width:768px) {
+    .nav-links {
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+    }
+
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--neutral-700);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--pink-600);
+}
+
+.nav-cta {
+    background: var(--pink-500);
+    color: var(--white) !important;
+    padding: 0.55rem 1.4rem;
+    border-radius: 100px;
+    transition: background 0.2s, transform 0.2s !important;
+}
+
+.nav-cta:hover {
+    background: var(--pink-600) !important;
+    transform: translateY(-1px);
+}

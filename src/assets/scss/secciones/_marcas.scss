@@ -1,0 +1,40 @@
+
+/* ── LOGOS / TRUST ───────────────────────────────── */
+.trust {
+    padding: 3rem 5vw;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--pink-100);
+    border-bottom: 1px solid var(--pink-100);
+}
+
+.trust p {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--neutral-500);
+    margin-bottom: 2rem;
+}
+
+.trust-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.trust-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--pink-300);
+    letter-spacing: 0.08em;
+    transition: color 0.2s;
+}
+
+.trust-logo:hover {
+    color: var(--pink-500);
+}
+
