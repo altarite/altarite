@@ -58,6 +58,13 @@
     text-align: center;
 }
 
+@media(min-width:1024px) {
+    .channel-card {
+         padding: 2.5rem 2.2rem;
+
+    }
+}
+
 .channel-card:hover {
     background: rgba(255, 255, 255, 0.18);
     transform: translateY(-4px);
@@ -111,13 +118,6 @@
 @media (min-width:768px) {
     .channels-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (min-width:1024px) {
-    .channels-grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 
 }

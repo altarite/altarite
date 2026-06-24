@@ -14,14 +14,22 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <a href="#" class="logo">Alta<span>rite</span></a>
+  <nav class="nav">
+    <div class="logos">
+      <div class="logo-imagen">
+        <img src="/build/img/logo.png" alt="imagen-logo">
+      </div>
+
+      <a href="#" class="logo">Alta<span>rite</span></a>
+
+    </div>
+
     <ul class="nav-links">
-      <li><a href="#quienes-somos">Quiénes Somos</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#como-trabajamos">Cómo Trabajamos</a></li>
-      <li><a href="#canales">Media Kit</a></li>
-      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      <li class="header-link"><a href="#quienes-somos">Quiénes Somos</a></li>
+      <li class="header-link"><a href="#servicios">Servicios</a></li>
+      <li class="header-link"><a href="#como-trabajamos">Cómo Trabajamos</a></li>
+      <li class="header-link"><a href="#canales">Media Kit</a></li>
+      <li class="header-link"><a href="#contacto" class="nav-cta">Contacto</a></li>
     </ul>
   </nav>
 
@@ -199,45 +207,47 @@
       <h2>Comencemos a <em>trabajar</em> juntos</h2>
       <p>Cuéntanos sobre tu marca y tus objetivos. Un estratega de Altarite se pondrá en contacto contigo a la brevedad.</p>
       <div class="contact-form">
-        <form class="form-grid">
+        <form class="">
+          <div class="formulario-grid">
+            <div class="form-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label>Empresa</label>
+              <input type="text" placeholder="Nombre de la empresa">
+            </div>
 
-          <div class="form-group">
-            <label>Nombre</label>
-            <input type="text" placeholder="Tu nombre">
-          </div>
-          <div class="form-group">
-            <label>Empresa</label>
-            <input type="text" placeholder="Nombre de la empresa">
-          </div>
 
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="correo@empresa.com">
+            </div>
 
-          <div class="form-group">
-            <label>Email</label>
-            <input type="email" placeholder="correo@empresa.com">
-          </div>
+            <div class="form-group">
+              <label>Teléfono</label>
+              <input type="tel" placeholder="Número de teléfono">
+            </div>
 
-          <div class="form-group">
-            <label>Teléfono</label>
-            <input type="tel" placeholder="Número de teléfono">
-          </div>
-          <div class="form-group">
-            <label>Cargo</label>
-            <input type="text" placeholder="Director de Marketing...">
-          </div>
-          <div class="form-group">
+            <div class="form-group">
+              <label>Cargo</label>
+              <input type="text" placeholder="Director de Marketing...">
+            </div>
 
-            <label>Servicio de interés</label>
-            <select>
-              <option value="">Selecciona una opción</option>
-              <option>Relaciones Públicas</option>
-              <option>Marketing Estratégico</option>
-              <option>Manejo de Crisis</option>
-              <option>Media Kit</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Mensaje</label>
-            <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+            <div class="form-group">
+              <label>Servicio de interés</label>
+              <select>
+                <option value="">Selecciona una opción</option>
+                <option>Relaciones Públicas</option>
+                <option>Marketing Estratégico</option>
+                <option>Manejo de Crisis</option>
+                <option>Media Kit</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje</label>
+              <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+            </div>
           </div>
           <div class="form-submit">
             <button type="submit">Enviar mensaje →</button>
@@ -250,7 +260,14 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <a href="#" class="footer-logo">Alta<span>rite</span></a>
+    <div class="logos">
+      <div class="logo-imagen">
+        <img src="/build/img/logo.png" alt="imagen-logo">
+      </div>
+
+      <a href="#" class="logo">Alta<span>rite</span></a>
+
+    </div>
     <div class="footer-links">
       <a href="#quienes-somos">Quiénes Somos</a>
       <a href="#servicios">Servicios</a>
