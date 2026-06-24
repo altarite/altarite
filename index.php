@@ -108,12 +108,6 @@
         <span class="service-tag">PR Estratégico</span>
       </div>
 
-      <div class="service-card reveal">
-        <div class="service-icon">💡</div>
-        <h3>Consultoría Estratégica</h3>
-        <p>Analizamos tu ecosistema de comunicación y desarrollamos planes personalizados que alineen el mensaje de tu empresa con los objetivos de negocio.</p>
-        <span class="service-tag">Consultoría</span>
-      </div>
 
       <div class="service-card reveal">
         <div class="service-icon">📈</div>
@@ -122,12 +116,7 @@
         <span class="service-tag">Growth</span>
       </div>
 
-      <div class="service-card reveal">
-        <div class="service-icon">🗞️</div>
-        <h3>Gestión de Medios</h3>
-        <p>Administramos tus relaciones con periodistas, influencers y medios digitales para maximizar la cobertura y el alcance de tus mensajes clave.</p>
-        <span class="service-tag">Media</span>
-      </div>
+
 
       <div class="service-card reveal">
         <div class="service-icon">🛡️</div>
@@ -136,12 +125,7 @@
         <span class="service-tag">Crisis PR</span>
       </div>
 
-      <div class="service-card reveal">
-        <div class="service-icon">✨</div>
-        <h3>Identidad de Marca</h3>
-        <p>Definimos y comunicamos el ADN de tu marca de forma coherente en todos los puntos de contacto, reforzando confianza y diferenciación.</p>
-        <span class="service-tag">Branding</span>
-      </div>
+
     </div>
   </section>
 
@@ -185,41 +169,24 @@
       </div>
 
       <div class="channels-grid">
-        <div class="channel-card reveal">
-          <div class="channel-icon">📺</div>
-          <h3>Medios Tradicionales</h3>
-          <p>Televisión, radio y prensa escrita. Acceso a redacciones y líderes de opinión en los principales medios del país.</p>
-        </div>
-        <div class="channel-card reveal">
-          <div class="channel-icon">📱</div>
-          <h3>Medios Digitales</h3>
-          <p>Portales de noticias, blogs especializados, newsletters y plataformas digitales con alta segmentación de audiencia.</p>
-        </div>
-        <div class="channel-card reveal">
-          <div class="channel-icon">🌐</div>
-          <h3>Redes Sociales</h3>
-          <p>Gestión de presencia en Instagram, LinkedIn, X y TikTok con contenido estratégico y activaciones de influencers.</p>
-        </div>
+
         <div class="channel-card reveal">
           <div class="channel-icon">🎤</div>
           <h3>Eventos & Speakers</h3>
           <p>Posicionamiento de líderes empresariales como voceros en foros, congresos y panels de la industria.</p>
         </div>
-        <div class="channel-card reveal">
-          <div class="channel-icon">✉️</div>
-          <h3>Email & Newsletters</h3>
-          <p>Comunicaciones directas y segmentadas hacia públicos específicos con alta tasa de apertura e impacto medible.</p>
-        </div>
+
         <div class="channel-card reveal">
           <div class="channel-icon">🤝</div>
           <h3>Alianzas Estratégicas</h3>
           <p>Conexión con cámaras de comercio, asociaciones industriales y organizaciones que amplifican el alcance de tu marca.</p>
         </div>
+
       </div>
 
       <div class="mediakit-wrap reveal">
         <a href="#contacto" class="btn-outline-white">
-          <span>↓</span> Solicitar Media Kit completo
+          <span>↓</span> Media Kit Information
         </a>
       </div>
     </div>
@@ -231,9 +198,9 @@
       <span class="section-tag">Contacto</span>
       <h2>Comencemos a <em>trabajar</em> juntos</h2>
       <p>Cuéntanos sobre tu marca y tus objetivos. Un estratega de Altarite se pondrá en contacto contigo a la brevedad.</p>
-
       <div class="contact-form">
-        <div class="form-row">
+        <form class="form-grid">
+
           <div class="form-group">
             <label>Nombre</label>
             <input type="text" placeholder="Tu nombre">
@@ -242,37 +209,41 @@
             <label>Empresa</label>
             <input type="text" placeholder="Nombre de la empresa">
           </div>
-        </div>
-        <div class="form-row">
+
+
           <div class="form-group">
             <label>Email</label>
             <input type="email" placeholder="correo@empresa.com">
+          </div>
+
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="tel" placeholder="Número de teléfono">
           </div>
           <div class="form-group">
             <label>Cargo</label>
             <input type="text" placeholder="Director de Marketing...">
           </div>
-        </div>
-        <div class="form-group">
-          <label>Servicio de interés</label>
-          <select>
-            <option value="">Selecciona una opción</option>
-            <option>Relaciones Públicas</option>
-            <option>Consultoría Estratégica</option>
-            <option>Marketing Estratégico</option>
-            <option>Gestión de Medios</option>
-            <option>Manejo de Crisis</option>
-            <option>Identidad de Marca</option>
-            <option>Media Kit</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Mensaje</label>
-          <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
-        </div>
-        <div class="form-submit">
-          <button type="button">Enviar mensaje →</button>
-        </div>
+          <div class="form-group">
+
+            <label>Servicio de interés</label>
+            <select>
+              <option value="">Selecciona una opción</option>
+              <option>Relaciones Públicas</option>
+              <option>Marketing Estratégico</option>
+              <option>Manejo de Crisis</option>
+              <option>Media Kit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Mensaje</label>
+            <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+          </div>
+          <div class="form-submit">
+            <button type="submit">Enviar mensaje →</button>
+          </div>
+
+        </form>
       </div>
     </div>
   </section>

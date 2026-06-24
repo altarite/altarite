@@ -1211,14 +1211,26 @@ nav {
   .contact-box {
     padding: 4rem;
   }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .form-group {
+    margin-bottom: 1.8rem;
+  }
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
+}
 .form-group label {
   font-size: 0.78rem;
   font-weight: 600;
