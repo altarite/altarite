@@ -5,25 +5,18 @@
         }
     },
     "routes": [
+
         {
-            "src": "/src/assets/fonts/(.*)",
-            "dest": "/src/assets/fonts/$1"
-        },
-             {
-            "src": "/src/assets/videos/(.*)",
-            "dest": "/src/assets/videos/$1"
+            "src": "/build/css/(.*)",
+            "dest": "/build/css/$1"
         },
         {
-            "src": "/src/assets/css/(.*)",
-            "dest": "/src/assets/css/$1"
+            "src": "/build/js/(.*)",
+            "dest": "/build/js/$1"
         },
         {
-            "src": "/src/assets/js/(.*)",
-            "dest": "/src/assets/js/$1"
-        },
-        {
-            "src": "/src/assets/img/(.*)",
-            "dest": "/src/assets/img/$1"
+            "src": "/build/img/(.*)",
+            "dest": "/build/img/$1"
         },
         {
             "src": "/src/components/(.*)",

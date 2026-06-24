@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/build/css/app.css">
+  <!-- icono del sitio -->
   <link rel="icon" type="image/png" href="/build/img/logo.png" />
 </head>
 
@@ -57,12 +58,10 @@
   <div class="trust">
     <p>Trabajamos con marcas de todos los sectores</p>
     <div class="trust-logos">
-      <span class="trust-logo">Retail</span>
-      <span class="trust-logo">Tecnología</span>
-      <span class="trust-logo">Salud</span>
-      <span class="trust-logo">Moda</span>
-      <span class="trust-logo">Finanzas</span>
-      <span class="trust-logo">Educación</span>
+      <span class="trust-logo">Alimentos</span>
+      <span class="trust-logo">Cuidado Personal</span>
+      <span class="trust-logo">Laboratorios Farmacéuticos</span>
+      <span class="trust-logo">Suplementos</span>
     </div>
   </div>
 
