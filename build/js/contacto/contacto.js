@@ -49,16 +49,17 @@ export const contacto = () => {
         };
 
         //si pasa validacion lo metemos en un appendChild
-        const formData = new FormData();
-        formData.append('nombre', nombre);
-        formData.append('empresa', empresa);
-        formData.append('email', email);
-        formData.append('tel', tel);
-        formData.append('cargo', cargo);
-        formData.append('servicio', servicio);
-        formData.append('mensaje', mensaje);
+        const datosContacto = {
+            nombre,
+            empresa,
+            email,
+            tel,
+            cargo,
+            servicio,
+            mensaje
+        };
         //enviando la infomación
-        enviarFormulario(formData);
+        enviarFormulario(datosContacto);
     }
 
     const alertasDiv = document.querySelector('#alertasDiv');
@@ -78,17 +79,17 @@ export const contacto = () => {
     // });
 
 
-    const enviarFormulario = async (formData) => {
+    const enviarFormulario = async (datosObj) => {
         const url = `/api/send-email`;
         try {
             const respuesta = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
+                body: JSON.stringify(datosObj)
             });
-            const resultado=await respuesta.status;
-            console.log(resultado);
-            
+            const resultado = await respuesta.json();
+            console.log("Respuesta del servidor:", resultado);
+
         } catch (error) {
             console.log(error);
 
