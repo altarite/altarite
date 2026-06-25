@@ -110,7 +110,7 @@ export const contacto = () => {
         btn.textContent = "✓ Mensaje enviado correctamente";
         btn.classList.add('disabled-btn');
         //limpiando el form
-        //formulario.reset();
+        formulario.reset();
         setTimeout(() => {
             //despues de 5s restablece al original
             btn.classList.remove('disabled-btn');

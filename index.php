@@ -171,7 +171,7 @@
           <div class="formulario-grid">
             <div class="form-group">
               <label>Nombre</label>
-              <input type="text" placeholder="Tu nombre"  id="nombre">
+              <input type="text" placeholder="Tu nombre y apellidos"  id="nombre">
             </div>
             <div class="form-group">
               <label>Empresa</label>
@@ -240,7 +240,7 @@
     </div>
     <p class="footer-copy">© <?php echo date('Y') ?> Altarite. Todos los derechos reservados.</p>
   </footer>
-  <script type="module" src="/build/js/app.js?v=0.3.5"></script>
+  <script type="module" src="/build/js/app.js?v=0.3.8"></script>
 
 </body>
 
