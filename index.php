@@ -240,7 +240,7 @@
     </div>
     <p class="footer-copy">© <?php echo date('Y') ?> Altarite. Todos los derechos reservados.</p>
   </footer>
-  <script type="module" src="/build/js/app.js?v=0.3.0"></script>
+  <script type="module" src="/build/js/app.js?v=0.3.1"></script>
 
 </body>
 
