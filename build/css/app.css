@@ -725,12 +725,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero-badge::before {
-  content: "◆";
-  font-size: 0.6rem;
-  color: var(--pink-500);
-}
-
 .hero h1 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.8rem, 6vw, 5.5rem);
