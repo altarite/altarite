@@ -321,6 +321,17 @@ html {
   scroll-behavior: smooth;
 }
 
+a,
+a:active,
+a:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Para aplicarlo a todo tu sitio web (incluyendo botones e inputs) */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: var(--pink-50);
@@ -451,6 +462,178 @@ body {
 .nav-cta:hover {
   background: var(--pink-600) !important;
   transform: translateY(-1px);
+}
+
+/*menu-mobil*/
+.hamburguesa {
+  display: block;
+  width: 36px;
+  height: 28px;
+}
+
+@media (min-width: 768px) {
+  .hamburguesa {
+    display: none;
+  }
+}
+/*Overlay Hamburguesa*/
+.overlay-hamburguesa {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0rem);
+  -webkit-backdrop-filter: blur(0rem);
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, visibility 0.3s;
+  overflow-y: scroll;
+  z-index: 205;
+}
+
+.mostrar {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.8rem);
+  -webkit-backdrop-filter: blur(0.8rem);
+  visibility: visible;
+  z-index: 205;
+}
+
+.body-movil {
+  overflow: hidden;
+}
+
+.movil-info {
+  margin-top: 3rem;
+  padding: 1rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+
+.movil-logos {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.movil-logos .logo-imagen img {
+  width: 42px;
+}
+
+.movil-logos .logo {
+  font-size: 45px;
+}
+
+.movil-info p {
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 12px;
+  opacity: 0.72;
+  letter-spacing: 0.06em;
+}
+
+.fondo-rosa {
+  background-color: var(--pink-200);
+  position: fixed;
+  width: min(82%, 32rem);
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  /* Empieza fuera de la pantalla */
+  transition: transform 0.3s ease-in-out;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 205;
+  overflow-y: scroll;
+  box-shadow: -12px 0 40px rgba(0, 0, 0, 0.28);
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-hamburguesa.mostrar .fondo-rosa {
+  transform: translateX(0);
+  /* Entra desde la derecha */
+}
+
+@media (min-width: 768px) {
+  .fondo-rosa {
+    width: 35%;
+  }
+}
+.movil-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.movil-links li {
+  list-style: none;
+  letter-spacing: 0.5em;
+  /* padding: 2rem 2.5rem; */
+  padding: 1.3rem 2.5rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.movil-links li:active {
+  transform: scale(0.98);
+}
+
+.movil-links li:hover {
+  background-color: var(--pink-600);
+  color: var(--pink-200);
+  transform: translateX(4px);
+}
+
+.movil-links li:last-child {
+  margin-top: 1.6rem;
+}
+
+.movil-links a {
+  color: var(--azul-200);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+.movil-links .movil-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+}
+
+.movil-links .nav-cta {
+  background: var(--pink-700);
+  color: var(--pink-50);
+  border-radius: 999px;
+  padding: 1.3rem 1.8rem;
+  font-weight: 800;
+  width: -moz-fit-content;
+  width: fit-content;
+  letter-spacing: 0.01rem;
+}
+
+.movil-links .nav-cta:hover {
+  color: var(--dark);
+}
+
+.movil-link svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  flex-shrink: 0;
+}
+
+.movil-links a:hover {
+  color: #fff;
 }
 
 /* ── HERO ────────────────────────────────────────── */

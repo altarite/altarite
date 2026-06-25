@@ -14,27 +14,7 @@
 </head>
 
 <body>
-
-  <!-- NAVBAR -->
-  <nav class="nav">
-    <div class="logos">
-      <div class="logo-imagen">
-        <img src="/build/img/logo.png" alt="imagen-logo">
-      </div>
-
-      <a href="#" class="logo">Alta<span>rite</span></a>
-
-    </div>
-
-    <ul class="nav-links">
-      <li class="header-link"><a href="#quienes-somos">Quiénes Somos</a></li>
-      <li class="header-link"><a href="#servicios">Servicios</a></li>
-      <li class="header-link"><a href="#como-trabajamos">Cómo Trabajamos</a></li>
-      <li class="header-link"><a href="#canales">Media Kit</a></li>
-      <li class="header-link"><a href="#contacto" class="nav-cta">Contacto</a></li>
-    </ul>
-  </nav>
-
+<?php include __DIR__ .'/src/components/header.php' ?>
   <!-- HERO -->
   <section class="hero">
     <div class="blob blob-1"></div>
@@ -74,30 +54,7 @@
       <p>Trabajamos directamente con líderes de marketing, directores comerciales y equipos de relaciones públicas que buscan resultados sólidos y aliados estratégicos de confianza.</p>
       <a href="#servicios" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Explorar servicios</a>
     </div>
-    <div class="about-visual reveal">
-      <div class="about-card">
-        <div class="geo-accent"></div>
-        <div class="geo-accent-2"></div>
-        <div class="stat-grid">
-          <div class="stat">
-            <div class="stat-num">+120</div>
-            <div class="stat-label">Marcas asesoradas</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">8+</div>
-            <div class="stat-label">Años de experiencia</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">15</div>
-            <div class="stat-label">Sectores atendidos</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">98%</div>
-            <div class="stat-label">Satisfacción de clientes</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </section>
 
   <!-- SERVICIOS -->
@@ -277,7 +234,7 @@
     </div>
     <p class="footer-copy">© <?php echo date('Y') ?> Altarite. Todos los derechos reservados.</p>
   </footer>
-  <script type="module" src="/build/js/app.js"></script>
+  <script type="module" src="/build/js/app.js?v=0.2.0"></script>
 
 </body>
 

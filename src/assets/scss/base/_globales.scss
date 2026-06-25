@@ -10,6 +10,18 @@ html {
     scroll-behavior: smooth;
 }
 
+a,
+a:active,
+a:focus {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Para aplicarlo a todo tu sitio web (incluyendo botones e inputs) */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--pink-50);
