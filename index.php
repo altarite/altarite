@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<?php include __DIR__ .'/src/components/header.php' ?>
+  <?php include __DIR__ . '/src/components/header.php' ?>
   <!-- HERO -->
   <section class="hero">
     <div class="blob blob-1"></div>
@@ -52,9 +52,12 @@
       <h2>Estrategia que <em>construye</em> reputaciones</h2>
       <p>Altarite es una agencia especializada en posicionamiento de marca, relaciones públicas y marketing estratégico. Combinamos visión creativa con análisis riguroso para impulsar el crecimiento de nuestros clientes.</p>
       <p>Trabajamos directamente con líderes de marketing, directores comerciales y equipos de relaciones públicas que buscan resultados sólidos y aliados estratégicos de confianza.</p>
-      <a href="#servicios" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Explorar servicios</a>
+      <div class="about-button">
+        <a href="#servicios" class="btn-primary" style="margin-top:1.5rem; display:inline-block;">Explorar servicios</a>
+
+      </div>
     </div>
-    
+
   </section>
 
   <!-- SERVICIOS -->
@@ -234,7 +237,7 @@
     </div>
     <p class="footer-copy">© <?php echo date('Y') ?> Altarite. Todos los derechos reservados.</p>
   </footer>
-  <script type="module" src="/build/js/app.js?v=0.2.0"></script>
+  <script type="module" src="/build/js/app.js?v=0.2.1"></script>
 
 </body>
 
