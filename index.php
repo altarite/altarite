@@ -4,13 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Básico -->
   <title>Altarite — Relaciones Públicas & Marketing Estratégico</title>
+  <meta name="description" content="Impulsamos la reputación y el crecimiento de tu marca mediante estrategias de relaciones públicas y marketing digital de alto impacto. Conoce nuestros servicios.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.altarite.com/"> <!-- Cambia por tu dominio real -->
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Altarite — Relaciones Públicas & Marketing Estratégico">
+  <meta property="og:description" content="Impulsamos la reputación y el crecimiento de tu marca mediante estrategias de relaciones públicas y marketing digital de alto impacto.">
+  <meta property="og:url" content="https://www.altarite.com/"> <!-- Cambia por tu dominio real -->
+  <meta property="og:image" content="https://www.altarite.com/build/img/altarite.jpg"> <!-- Obligatorio: Ruta absoluta a una imagen de 1200x630px -->
+  <meta property="og:site_name" content="Altarite">
+  <meta property="og:locale" content="es_MX"> <!-- Ajusta a tu país si es necesario, ej. es_ES, es_AR -->
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Altarite — Relaciones Públicas & Marketing Estratégico">
+  <meta name="twitter:description" content="Impulsamos la reputación y el crecimiento de tu marca mediante relaciones públicas y marketing de alto impacto.">
+  <meta name="twitter:image" content="https://www.altarite.com/build/img/og-image.jpg">
+
+  <!-- Rendimiento (Fuentes) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
   <link rel="stylesheet" href="/build/css/app.css">
-  <!-- icono del sitio -->
+  
+  <!-- Icono del sitio (Favicon) -->
   <link rel="icon" type="image/png" href="/build/img/logo.png" />
+  <link rel="apple-touch-icon" href="/build/img/logo.png" /> <!-- Para cuando guardan tu web en el inicio de un iPhone -->
 </head>
 
 <body>
