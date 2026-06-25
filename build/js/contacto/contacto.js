@@ -1,4 +1,4 @@
-import { alertas } from "../helpers/funciones.js";
+import { alertas, mostrarSpinner } from "../helpers/funciones.js";
 import { validarTelefono } from "../helpers/funciones.js";
 export const contacto = () => {
 
@@ -82,19 +82,41 @@ export const contacto = () => {
     const enviarFormulario = async (datosObj) => {
         const url = `/api/send-email`;
         try {
+
             const respuesta = await fetch(url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(datosObj)
             });
+            console.log(respuesta);
+
             const resultado = await respuesta.json();
             console.log("Respuesta del servidor:", resultado);
-
+            if (respuesta.ok) {
+                desactivarBTN();
+            }
         } catch (error) {
             console.log(error);
 
         }
 
+    }
+
+    const btn = document.querySelector('#btn-enviar');
+    const desactivarBTN = () => {
+        //estado 2 del btn
+        console.log(btn);
+
+        btn.textContent = "✓ Mensaje enviado correctamente";
+        btn.classList.add('disabled-btn');
+        //limpiando el form
+        //formulario.reset();
+        setTimeout(() => {
+            //despues de 5s restablece al original
+            btn.classList.remove('disabled-btn');
+            btn.disabled = false;
+            btn.textContent = "Enviar mensaje";
+        }, 5000);
     }
 
 }

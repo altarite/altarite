@@ -213,7 +213,7 @@
             <div id="alertasDiv">
 
             </div>
-            <button type="submit">Enviar mensaje →</button>
+            <button type="submit" id="btn-enviar" >Enviar mensaje →</button>
           </div>
 
         </form>

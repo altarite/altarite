@@ -23,7 +23,7 @@ export default async function handler(req, res) {
             <h2 style="color: #1a1a1a; border-bottom: 2px solid #0070f3; padding-bottom: 10px; margin-top: 0;">
               📥 Nuevo Prospecto - altarite.com
             </h2>
-            <p style="font-size: 16px;">Hola Vania, has recibido un nuevo mensaje a través del formulario de contacto:</p>
+            <p style="font-size: 16px;">Hola equipo Altarite, han recibido un nuevo mensaje a través del formulario de contacto:</p>
             <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
               <tr style="background-color: #f9f9f9;">
                 <td style="padding: 10px; font-weight: bold; width: 30%; border-bottom: 1px solid #eee;">Nombre:</td>
