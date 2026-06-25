@@ -167,49 +167,52 @@
       <h2>Comencemos a <em>trabajar</em> juntos</h2>
       <p>Cuéntanos sobre tu marca y tus objetivos. Un estratega de Altarite se pondrá en contacto contigo a la brevedad.</p>
       <div class="contact-form">
-        <form class="">
+        <form class="formulario-contacto">
           <div class="formulario-grid">
             <div class="form-group">
               <label>Nombre</label>
-              <input type="text" placeholder="Tu nombre">
+              <input type="text" placeholder="Tu nombre"  id="nombre">
             </div>
             <div class="form-group">
               <label>Empresa</label>
-              <input type="text" placeholder="Nombre de la empresa">
+              <input type="text" placeholder="Nombre de la empresa" id="empresa">
             </div>
 
 
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="correo@empresa.com">
+              <input type="email" placeholder="correo@empresa.com" id="email">
             </div>
 
             <div class="form-group">
               <label>Teléfono</label>
-              <input type="tel" placeholder="Número de teléfono">
+              <input type="tel" placeholder="Número de teléfono" id="telefono">
             </div>
 
             <div class="form-group">
               <label>Cargo</label>
-              <input type="text" placeholder="Director de Marketing...">
+              <input type="text" placeholder="Director de Marketing..." id="cargo">
             </div>
 
             <div class="form-group">
               <label>Servicio de interés</label>
-              <select>
-                <option value="">Selecciona una opción</option>
-                <option>Relaciones Públicas</option>
-                <option>Marketing Estratégico</option>
-                <option>Manejo de Crisis</option>
-                <option>Media Kit</option>
+              <select id="servicio">
+                <option value="" selected disabled>-Selecciona una opción-</option>
+                <option value="Relaciones Pública">Relaciones Públicas</option>
+                <option value="Marketing Estratégico">Marketing Estratégico</option>
+                <option value="Manejo de crisis">Manejo de Crisis</option>
+                <option value="Media Kit">Media Kit</option>
               </select>
             </div>
             <div class="form-group">
               <label>Mensaje</label>
-              <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+              <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..." id="mensaje"></textarea>
             </div>
           </div>
           <div class="form-submit">
+            <div id="alertasDiv">
+
+            </div>
             <button type="submit">Enviar mensaje →</button>
           </div>
 
@@ -237,7 +240,7 @@
     </div>
     <p class="footer-copy">© <?php echo date('Y') ?> Altarite. Todos los derechos reservados.</p>
   </footer>
-  <script type="module" src="/build/js/app.js?v=0.2.1"></script>
+  <script type="module" src="/build/js/app.js?v=0.3.0"></script>
 
 </body>
 
